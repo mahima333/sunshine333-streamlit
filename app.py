@@ -49,18 +49,6 @@ options_acc_area = ['Other', 'Office areas', 'Residential areas', ' Church areas
 features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','Type_of_collision','Age_band_of_driver','Sex_of_driver',
     'Educational_level','Service_year_of_vehicle','Day_of_week','Area_accident_occured']
 
-The code first imports the necessary libraries and modules required for the app; these are the libraries that we stated in our requirements.txt file.
-
-It then loads two pre-trained objects, an encoder and a machine learning model, which will be used to encode categorical variables and predict the accident severity, respectively. These are the models we downloaded in Step 3.
-
-We then set some Streamlit options and configurations, including the page title, icon, and layout, and defines some dropdown menu options for various features related to the accident, such as the day of the week, age band of the driver, type of collision, and area where the accident occurred.
-
-Finally, the code creates a list of features that will be used as input to the machine learning model. This list includes the number of vehicles involved, the number of casualties, the hour of the day, the type of collision, the age band of the driver, the sex of the driver, the educational level, the service year of the vehicle, the day of the week, and the area where the accident occurred.
-Step 6: App.py - User Input & Model Prediction
-Now that we’ve defined the inputs to be taken from the user, let’s see how we can define the main() function to develop UI that will be rendered on the front end.
-
-Copy the code below and paste it into app.py.
-
 # Give a title to web app using html syntax
 st.markdown("<h1 style='text-align: center;'>Accident Severity Prediction App 🚧</h1>", unsafe_allow_html=True)
 
